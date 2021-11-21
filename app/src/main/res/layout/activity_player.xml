@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity"
+    android:orientation="vertical">
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/song_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="40sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/singer_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@android:color/darker_gray"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/begin_time"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1.5" />
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="10" />
+
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1.5" />
+        </TableRow>
+
+        <TableRow>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@android:color/darker_gray"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="开始播放" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/download"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="下载"/>
+
+<!--            <Button-->
+<!--                android:id="@+id/pause"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="暂停播放" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/resume"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="继续播放"/>-->
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/before"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="上一首"/>
+            <Button
+                android:id="@+id/next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="下一首"/>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
